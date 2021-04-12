@@ -1,13 +1,17 @@
 const { app, BrowserWindow, globalShortcut } = require('electron')
+
 const {createOverlayFixWindow} = require('./src/modules/window/windows-taskbar-fix')
 const {createWindow} = require('./src/modules/window/create-window')
+
+console.log(app.getPath('appData'));
+
 app.whenReady().then(() => {
 
   createOverlayFixWindow();
   createWindow();
 
      // Register a 'CommandOrControl+X' shortcut listener.
-     const ret = globalShortcut.register('CommandOrControl+D', () => {
+     globalShortcut.register('CommandOrControl+D', () => {
 
       //check window state
       if (mainWindow.isVisible()) {
