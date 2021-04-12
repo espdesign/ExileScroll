@@ -2,6 +2,7 @@ const {BrowserWindow} = require('electron')
 const {configStorage} = require('../config/store')
 const path = require('path');
 
+
 // this function returns a boolean if the configStorage has a record of running on the system before.
 function isFirstTimeRunning(){
     //if it is the first time running set the configStorage.isFirstRun to false
@@ -25,13 +26,10 @@ function buildWindow(){
     mainWindow = new BrowserWindow({
         width: storedWidth,
         height: storedHeight,
-        center:true,
         alwaysOnTop: true,
         show: true,
         frame: false,
         skipTaskbar: true,
-        backgroundColor: '#FFF',
-    
         webPreferences: {
           preload: path.join(__dirname, '../preload/preload.js')
         }
@@ -54,4 +52,18 @@ function createWindow (){
     }
     
 }
+
+// this function saves the window size after resizing in the configStorage
+function changedWindowSize(){
+    windowSizeHeight = (mainWindow.getSize())[1]
+    windowSizeWidth = (mainWindow.getSize())[0]
+    configStorage.set('window.size.height', windowSizeHeight)
+    configStorage.set('window.size.width', windowSizeWidth)
+}
+
+
+//export needed functions
 exports.createWindow = createWindow
+exports.isFirstTimeRunning = isFirstTimeRunning
+exports.changedWindowSize = changedWindowSize
+
