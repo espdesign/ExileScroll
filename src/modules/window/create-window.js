@@ -26,12 +26,14 @@ function buildWindow(){
     mainWindow = new BrowserWindow({
         width: storedWidth,
         height: storedHeight,
+        minHeight: 200,
+        minWidth: 200,
         alwaysOnTop: true,
         show: true,
         frame: false,
         skipTaskbar: true,
         webPreferences: {
-          preload: path.join(__dirname, '../preload/preload.js')
+            preload: path.join(__dirname, '../preload/preload.js')
         }
       })
       mainWindow.setAlwaysOnTop(true, "pop-up-menu");
@@ -66,4 +68,3 @@ function changedWindowSize(){
 exports.createWindow = createWindow
 exports.isFirstTimeRunning = isFirstTimeRunning
 exports.changedWindowSize = changedWindowSize
-

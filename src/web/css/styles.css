@@ -23,7 +23,8 @@ html, body, .grid-container { height: 100%; margin: 0; }
   font-size: 12px;
   color:white;
   top:-10px;
-  left:45%;
+  right:50%;
+ 
   position: absolute;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
@@ -33,22 +34,28 @@ html, body, .grid-container { height: 100%; margin: 0; }
   position: absolute;
   -webkit-app-region: no-drag;
 }
+.Titlebar img:hover {
+  
+  filter:brightness(175%)
+}
+.Titlebar img:active {
+  background-color: #6c7180;
+
+}
+
 #exitIcon{
 right: 0px;
 }
 #preferencesIcon{
-right: 22px;
-  }
-.Titlebar img:hover {
-  background-color: #282a36;
+right: 24px;
 }
-.Titlebar img:active {
-  background-color: #72537e;
+.preferencesActive{
+  background-color: #6c7180;
 }
 
 .Sidebar { 
   grid-area: Sidebar; 
-  background-color: #282a36;
+  background-color: #343746;
   position:fixed;
   top:22px;
   min-width: 50px;
@@ -57,25 +64,33 @@ right: 22px;
 }
 .Sidebar a img{
   display:block;
-  margin-left:auto;
-  margin-right: auto;
-  width: 85%;
+  margin: auto;
+  width: 47px;
+  filter:grayscale(75%);
 }
 .Sidebar a img:hover{
-  background-color: #3c3d51;
+  filter:grayscale(0%);
+
 }
-.Sidebar a img:active{
-  background-color: #72537e;
+
+#sidebaractive{
+  filter: grayscale(0%);
+}
+#borderFix{
+  border-left: 2px solid #7e558f;
+  background-color: #6c7180;
+  margin-right:2px;
 }
 .MainContent { 
   grid-area: MainContent; 
-  background-color: #3f4355;
+  background-color: #282a36;
   position: fixed;
   top:22px;
   left: 50px;
   width:100%;
   min-height:100%;
   padding-left: 25px;
+  outline: 1px solid #191a21;
 
 }
 
