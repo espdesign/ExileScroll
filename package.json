@@ -1,5 +1,6 @@
+
 {
-  "name": "exile-scroll",
+  "name": "exilescroll",
   "version": "0.1.0",
   "description": "A Path Of Exile overlay to help with league content.",
   "main": "main.js",
@@ -33,30 +34,6 @@
     "electron-store": "^7.0.3"
   },
   "config": {
-    "forge": {
-      "packagerConfig": {},
-      "makers": [
-        {
-          "name": "@electron-forge/maker-squirrel",
-          "config": {
-            "name": "exile_scroll"
-          }
-        },
-        {
-          "name": "@electron-forge/maker-zip",
-          "platforms": [
-            "darwin"
-          ]
-        },
-        {
-          "name": "@electron-forge/maker-deb",
-          "config": {}
-        },
-        {
-          "name": "@electron-forge/maker-rpm",
-          "config": {}
-        }
-      ]
-    }
+    "forge": "./forge.config.js"
   }
 }

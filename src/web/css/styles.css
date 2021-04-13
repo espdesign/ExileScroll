@@ -23,7 +23,7 @@ html, body, .grid-container { height: 100%; margin: 0; }
   font-size: 12px;
   color:white;
   top:-10px;
-  left:50%;
+  left:45%;
   position: absolute;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
