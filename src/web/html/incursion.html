@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>ExileScroll</title>
+    <script src="../js/renderOnEachPage.js"></script>
     <link rel="stylesheet" href="../css/styles.css">
     <meta http-equiv="Content-Security-Policy" content="script-src 'self';" />
 </head>
@@ -11,37 +12,20 @@
         <div class="Titlebar">
             <p>ExileScroll - Incursion</p>
             <a><img id= "exitIcon" src= "../../assets/exiticon.png"></a>
-            <a><img id= "preferencesIcon"src= "../../assets/preferencesIcon.png"></a>
+            <a href="./preferences.html"><img id= "preferencesIcon"src= "../../assets/preferencesIcon.png"></a>
         </div>
         <div class="Sidebar">
-            <a href="./betrayal.html"><img src="../../assets/betrayalIcon47x47.png" alt="Betrayal"></a>
-            <a href="./incursion.html"><img src="../../assets/IncursionIcon47x47.png" alt="Incursion"></a>
+            <a href="./betrayal.html">
+                <img src="../../assets/betrayalIcon47x47.png" alt="Betrayal">
+            </a>
+            <div id= borderFix>
+                <a href="./incursion.html">
+                    <img id="sidebaractive" src="../../assets/IncursionIcon47x47.png" alt="Incursion">
+                </a>
+            </div>
         </div>
         <div class="MainContent">
-            <h1>Hello World!</h1>
-            <p>
-                We are using Node.js <span id="node-version"></span>,
-                Chromium <span id="chrome-version"></span>,
-                and Electron <span id="electron-version"></span>.
-            </p>
-            <h1>Hello World!</h1>
-            <p>
-                We are using Node.js <span id="node-version"></span>,
-                Chromium <span id="chrome-version"></span>,
-                and Electron <span id="electron-version"></span>.
-            </p>
-            <h1>Hello World!</h1>
-            <p>
-                We are using Node.js <span id="node-version"></span>,
-                Chromium <span id="chrome-version"></span>,
-                and Electron <span id="electron-version"></span>.
-            </p>
-            <h1>Hello World!</h1>
-            <p>
-                We are using Node.js <span id="node-version"></span>,
-                Chromium <span id="chrome-version"></span>,
-                and Electron <span id="electron-version"></span>.
-            </p>
+            <h1>Incursion</h1>
         </div>
       </div>
 </body>
