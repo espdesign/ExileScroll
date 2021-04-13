@@ -13,7 +13,8 @@ makers: [
       config: {
         name: "ExileScroll",
         exe: 'ExileScroll.exe',
-        setupIcon: path.resolve(iconDir, 'icon.ico')
+        setupIcon: path.resolve(iconDir, 'icon.ico'),
+        loadingGif: path.resolve(iconDir, 'installgif.gif')
       }
     },
     {
