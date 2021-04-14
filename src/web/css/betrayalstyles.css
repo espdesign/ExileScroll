@@ -1,0 +1,245 @@
+
+
+.grid-container-betrayal {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 1.2fr 1.2fr 1.2fr 1.1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Transportation Fortification Research Intervention"
+    "Transportation-tiers Fortification-tiers Research-tiers Intervention-tiers"
+    "Transportation-tiers Fortification-tiers Research-tiers Intervention-tiers"
+    "Transportation-tiers Fortification-tiers Research-tiers Intervention-tiers"
+    "null-t null-t null-t null-t";
+    max-height: 100vh;
+}
+
+.Transportation { grid-area: Transportation; 
+align-items: center;
+}
+
+.Transportation h1{
+    font-size: 2.5vw;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Fortification { grid-area: Fortification; 
+align-items: center;}
+.Fortification h1{
+    font-size: 2.5vw;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    align-self: center;
+}
+.Research { grid-area: Research; 
+align-items: center;}
+.Research h1{
+    font-size: 2.5vw;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Intervention { grid-area: Intervention; 
+align-items: center;}
+.Intervention h1{
+    font-size: 2.5vw;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Transportation-tiers {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "t-t1"
+    "t-t2"
+    "t-t3";
+  grid-area: Transportation-tiers;
+
+}
+
+.t-t1 { grid-area: t-t1; }
+
+.t-t2 { grid-area: t-t2; }
+
+.t-t3 { grid-area: t-t3; }
+
+.Fortification-tiers {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "f-t1"
+    "f-t2"
+    "f-t3";
+  grid-area: Fortification-tiers;
+
+}
+
+.f-t1 { grid-area: f-t1; }
+
+.f-t2 { grid-area: f-t2; }
+
+.f-t3 { grid-area: f-t3; }
+
+.Research-tiers {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "r-t1"
+    "r-t2"
+    "r-t3";
+  grid-area: Research-tiers;
+
+}
+
+.r-t1 { grid-area: r-t1; }
+
+.r-t2 { grid-area: r-t2; }
+
+.r-t3 { grid-area: r-t3; }
+
+.Intervention-tiers {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "i-t1"
+    "i-t2"
+    "i-t3";
+  grid-area: Intervention-tiers;
+
+}
+
+.i-t1 { grid-area: i-t1; }
+
+.i-t2 { grid-area: i-t2; }
+
+.i-t3 { grid-area: i-t3; }
+
+.null-t { 
+    grid-area: null-t; 
+    background-color: grey;
+}
+
+
+/* For presentation only, no need to copy the code below */
+
+.card-wrapper{
+        position: relative;
+        height:12vh;
+        width:10vh;
+        border-radius: 15% ;
+        background-color: rgba(255, 255, 255, 0.80);
+        margin: 2px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+
+}
+
+/* .card{
+    position: relative;
+} */
+
+.card-wrapper p {
+  align-self: center;
+  position: absolute;
+  font-size: 1.7vh;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color:white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* .card p{
+    position: absolute;
+    top:70%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    font-size: 1.7vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card img{
+    height:10vh;
+    width:10vh;
+
+} */
+
+.flexwrap-tiers{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.t1-color{
+  background-color: rgba(0, 255, 0, 0.3);
+}
+.t2-color{
+  background-color: rgba(255, 255, 0, 0.3);
+}
+.t3-color{
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+
+/* CARD BACKGROUND IMAGES */
+#Aisling-card{
+  background-image:url("../../assets/betrayal/Aisling.png");
+}
+#Cameria-card{
+  background-image: url("../../assets/betrayal/Cameria.png");
+}
+#Catarina-card{
+  background-image:url("../../assets/betrayal/Catarina.png");
+}
+
+#Elreon-card{
+  background-image: url("../../assets/betrayal/Elreon.png");
+}
+#Gravicius-card{
+  background-image: url("../../assets/betrayal/Gravicius.png");
+}
+#Guff-card{
+  background-image: url("../../assets/betrayal/Guff.png");
+}
+#Haku-card{
+  background-image: url("../../assets/betrayal/Haku.png");
+}
+#Hillock-card{
+  background-image: url("../../assets/betrayal/Hillock.png");
+}
+#It_That_Fled-card{
+  background-image: url("../../assets/betrayal/It_That_Fled.png");
+}
+#Janus-card{
+  background-image: url("../../assets/betrayal/Janus.png");
+}
+#Korell-card{
+  background-image: url("../../assets/betrayal/Korell.png");
+}
+#Leo-card{
+  background-image: url("../../assets/betrayal/Leo.png");
+}
+#Riker-card{
+  background-image: url("../../assets/betrayal/Riker.png");
+}
+#Rin-card{
+  background-image: url("../../assets/betrayal/Rin.png");
+}
+#Thane-card{
+  background-image: url("../../assets/betrayal/Thane.png");
+}
+#Tora-card{
+  background-image: url("../../assets/betrayal/Tora.png");
+}
+#Vagan-card{
+  background-image: url("../../assets/betrayal/Vagan.png");
+}
+#Vorici-card{
+  background-image: url("../../assets/betrayal/Vorici.png");
+}
